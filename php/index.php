@@ -2,7 +2,7 @@
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 
-$conn = new mysqli("localhost", "collecti_root", "marruecos2015", "collecti_test"); 
+$conn = new mysqli("localhost", "usuario", "pass", "db"); 
 
 $conn->query("SET NAMES 'utf8'");
 
