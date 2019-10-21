@@ -29,6 +29,7 @@
           <table class="table table-striped">
             <thead>
               <tr>
+                <th>ID</th>
                 <th>Nombre</th>
                 <th>Precio</th>
                 <th>Stock</th>
@@ -36,6 +37,7 @@
             </thead>
             <tbody>
               <tr ng-repeat="x in names">
+                <td>{{ x.ID }}</td>
                 <td>{{ x.Nombre }}</td>
                 <td>S/. {{ x.Precio }}</td>
                 <td>{{ x.Stock }} unidades</td>
