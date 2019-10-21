@@ -11,9 +11,10 @@ $result = $conn->query("SELECT * FROM postres");
 $outp = "";
 while($rs = $result->fetch_array(MYSQLI_ASSOC)) {
     if ($outp != "") {$outp .= ",";}
-    $outp .= '{"Nombre":"'  . $rs["nombre"] . '",';
-    $outp .= '"Precio":"'   . $rs["precio"]        . '",';
-    $outp .= '"Stock":"'. $rs["stock"]     . '"}';
+    $outp .= '{"ID":"'  . $rs["id"] . '",';
+    $outp .= '"Nombre":"'   . $rs["nombre"] . '",';
+    $outp .= '"Precio":"'   . $rs["precio"] . '",';
+    $outp .= '"Stock":"'. $rs["stock"] . '"}';
 }
 $outp ='{"records":['.$outp.']}';
 $conn->close();
